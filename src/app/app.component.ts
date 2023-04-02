@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'componentcommunication';
+  title = 'Component Communication';
+  childData: string="";
+
+  catchChildEvent($event : string){
+    this.childData = $event;
+  }
 }
